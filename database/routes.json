@@ -1,0 +1,46 @@
+[
+  {
+    "id": 1,
+    "from": "Київ",
+    "to": "Львів",
+    "departureTime": "08:00",
+    "arrivalTime": "14:30",
+    "price": 450,
+    "type": "Купе",
+    "availableSeats": 47,
+    "duration": "6 год 30 хв"
+  },
+  {
+    "id": 3,
+    "from": "Харків",
+    "to": "Дніпро",
+    "departureTime": "15:20",
+    "arrivalTime": "19:45",
+    "price": 280,
+    "type": "Купе",
+    "availableSeats": 45,
+    "duration": "4 год 25 хв"
+  },
+  {
+    "id": 4,
+    "from": "Львів",
+    "to": "Харків",
+    "departureTime": "10:15",
+    "arrivalTime": "19:30",
+    "price": 550,
+    "type": "Купе",
+    "availableSeats": 40,
+    "duration": "9 год 15 хв"
+  },
+  {
+    "id": 5,
+    "from": "Дніпро",
+    "to": "Київ",
+    "departureTime": "07:00",
+    "arrivalTime": "11:45",
+    "price": 320,
+    "type": "Плацкарт",
+    "availableSeats": 50,
+    "duration": "4 год 45 хв"
+  }
+]

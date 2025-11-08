@@ -1,0 +1,29 @@
+[
+  {
+    "id": 1,
+    "name": "Адміністратор",
+    "email": "admin@railway.ua",
+    "password": "admin123",
+    "phone": "+380 44 123 4567",
+    "role": "admin",
+    "createdAt": "2025-01-01T00:00:00.000Z"
+  },
+  {
+    "id": 2,
+    "name": "Іван Петренко",
+    "email": "ivan@example.com",
+    "password": "user123",
+    "phone": "+380 67 123 4567",
+    "role": "user",
+    "createdAt": "2025-10-15T08:30:00.000Z"
+  },
+  {
+    "id": 3,
+    "name": "Марія Коваль",
+    "email": "maria@example.com",
+    "password": "user123",
+    "phone": "+380 95 234 5678",
+    "role": "user",
+    "createdAt": "2025-10-20T12:15:00.000Z"
+  }
+]

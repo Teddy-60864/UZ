@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Управління маршрутами - Адмін-панель</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">🚂 Адмін-панель</div>
+            <nav id="nav"></nav>
+            <div class="burger" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </header>
+
+    <main class="admin-panel">
+        <div class="container">
+            <div class="admin-header">
+                <h1>Управління маршрутами</h1>
+            </div>
+
+            <div class="card" style="margin-bottom: 2rem;">
+                <h3>Додати новий маршрут</h3>
+                <form id="add-route-form"
+                    style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin-top: 1rem;">
+                    <div class="form-group">
+                        <label>Станція відправлення:</label>
+                        <input type="text" id="from" placeholder="Київ" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Станція прибуття:</label>
+                        <input type="text" id="to" placeholder="Львів" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Час відправлення:</label>
+                        <input type="time" id="departureTime" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Час прибуття:</label>
+                        <input type="time" id="arrivalTime" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Ціна (грн):</label>
+                        <input type="number" id="price" placeholder="450" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Доступно місць:</label>
+                        <input type="number" id="availableSeats" placeholder="50" value="50" required>
+                    </div>
+                    <div class="form-group" style="grid-column: 1 / -1;">
+                        <label>Тип вагону:</label>
+                        <select id="type">
+                            <option>Плацкарт</option>
+                            <option>Купе</option>
+                            <option>Люкс</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="btn" style="grid-column: 1 / -1;">Додати маршрут</button>
+                </form>
+            </div>
+
+            <div class="card">
+                <h3>Список маршрутів</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Маршрут</th>
+                            <th>Відправл.</th>
+                            <th>Прибуття</th>
+                            <th>Ціна</th>
+                            <th>Тип</th>
+                            <th>Місць</th>
+                            <th>Дії</th>
+                        </tr>
+                    </thead>
+                    <tbody id="admin-routes-table-body">
+                        <tr>
+                            <td colspan="8">Завантаження...</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Залізничні квитки. Адмін-панель.</p>
+        </div>
+    </footer>
+
+    <script src="/js/api.js"></script>
+    <script src="/js/script.js"></script>
+</body>
+
+</html>

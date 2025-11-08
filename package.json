@@ -1,0 +1,25 @@
+{
+  "name": "railway-ticket-system",
+  "version": "1.0.0",
+  "description": "Система бронювання залізничних квитків",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "nodemon server.js"
+  },
+  "keywords": [
+    "railway",
+    "tickets",
+    "booking"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "cors": "^2.8.5",
+    "express": "^4.21.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  }
+}

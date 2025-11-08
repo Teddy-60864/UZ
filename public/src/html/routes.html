@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Маршрути - Залізничні квитки</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">🚂 Залізничні квитки</div>
+            <nav id="nav"></nav>
+            <div class="burger" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section style="padding: 2rem 0; background: #f8f9fa;">
+            <div class="container">
+                <h1 style="text-align: center; margin-bottom: 2rem;">Пошук маршрутів</h1>
+                <div class="card">
+                    <form
+                        style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem;">
+                        <div class="form-group">
+                            <label>Звідки:</label>
+                            <input type="text" placeholder="Київ">
+                        </div>
+                        <div class="form-group">
+                            <label>Куди:</label>
+                            <input type="text" placeholder="Львів">
+                        </div>
+                        <div class="form-group">
+                            <label>Дата:</label>
+                            <input type="date">
+                        </div>
+                        <button type="submit" class="btn">Знайти</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <section style="padding: 2rem 0;">
+            <div class="container">
+                <h2 style="margin-bottom: 2rem;">Доступні маршрути</h2>
+
+                <div id="routes-list">
+                    <p>Завантаження маршрутів...</p>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Залізничні квитки. Всі права захищено.</p>
+        </div>
+    </footer>
+
+    <script src="/js/api.js"></script>
+    <script src="/js/script.js"></script>
+</body>
+
+</html>

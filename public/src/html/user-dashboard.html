@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Особистий кабінет - Залізничні квитки</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">🚂 Залізничні квитки</div>
+            <nav id="nav"></nav>
+            <div class="burger" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero" style="padding: 2rem 0;">
+            <div class="container">
+                <h1 id="user-greeting">Вітаємо!</h1>
+                <p>Ваш особистий кабінет</p>
+            </div>
+        </section>
+
+        <section style="padding: 2rem 0;">
+            <div class="container">
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem;">
+
+                    <div class="card">
+                        <h3>👤 Профіль</h3>
+                        <p><strong>Ім'я:</strong> <span id="user-profile-name">...</span></p>
+                        <p><strong>Email:</strong> <span id="user-profile-email">...</span></p>
+                        <button class="btn" style="margin-top: 1rem;">Редагувати</button>
+                    </div>
+
+                    <div class="card">
+                        <h3>🎫 Мої квитки</h3>
+                        <p>Тут будуть ваші квитки</p>
+                    </div>
+                </div>
+
+                <div class="card" style="margin-top: 2rem;">
+                    <h3>🎟️ Активні бронювання</h3>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Дата</th>
+                                <th>Маршрут</th>
+                                <th>Місце</th>
+                                <th>Статус</th>
+                                <th>Дії</th>
+                            </tr>
+                        </thead>
+                        <tbody id="user-tickets-table-body">
+                            <tr>
+                                <td colspan="5">Завантаження...</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Залізничні квитки. Всі права захищено.</p>
+        </div>
+    </footer>
+
+    <script src="/js/api.js"></script>
+    <script src="/js/script.js"></script>
+</body>
+
+</html>

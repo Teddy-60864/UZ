@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Управління квитками - Адмін-панель</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">🚂 Адмін-панель</div>
+            <nav id="nav"></nav>
+            <div class="burger" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </header>
+
+    <main class="admin-panel">
+        <div class="container">
+            <div class="admin-header">
+                <h1>Управління квитками</h1>
+            </div>
+
+            <div class="card">
+                <h3>Список квитків</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Користувач</th>
+                            <th>Маршрут</th>
+                            <th>Дата</th>
+                            <th>Місце</th>
+                            <th>Ціна</th>
+                            <th>Статус</th>
+                            <th>Дії</th>
+                        </tr>
+                    </thead>
+                    <tbody id="admin-tickets-table-body">
+                        <tr>
+                            <td colspan="8">Завантаження...</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Залізничні квитки. Адмін-панель.</p>
+        </div>
+    </footer>
+
+    <script src="/js/api.js"></script>
+    <script src="/js/script.js"></script>
+</body>
+
+</html>
